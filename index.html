@@ -5,8 +5,8 @@
 	<!-- information-->	
 	<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
 	<meta http-equiv="content-style-type" content="text/css"> 
-	<meta name="keywords" content="jquery mobile,jquery,mobile,epic editor">
-	<meta name="description" content="jquery mobile"> 
+	<meta name="keywords" content="jquery mobile,jquery,mobile,epic editor,markdown">
+	<meta name="description" content="jquery mobile app for Epic Editor"> 
 	<meta name="author" content="jorge brunal a.k.a. diniremix">
 	<meta name="date" content="07,18,2012"> 
 	<meta name="copyright" content="2012 c.c. http://creativecommons.org/licenses/by-sa/3.0/">
@@ -25,24 +25,47 @@
 	<body>
 		<!--[if lt IE 9]>
 			<META HTTP-EQUIV="refresh" CONTENT="0; url=http://www.mozilla.org/es-ES/firefox/"> 
-		<![endif]-->		
+		<![endif]-->
+
 		<!-- page -->
-		<div data-role="page" id="page" data-title="">
+		<div data-role="page" id="mainpage" data-title="Mobile-EpicEditor">
 			<div data-role="header">
 				<h1>Mobile-EpicEditor</h1>
-				<a href="#options" data-transition="slide" data-icon="grid" data-iconpos="notext" class="ui-btn-right"></a>
+				<a href="#optionpage" data-transition="slide" data-icon="grid" data-iconpos="notext" class="ui-btn-right"></a>
 			</div><!-- /header -->
-			
+
 			<div data-role="content" id="content">	
 				<p>Mobile-EpicEditor Here</p>		
 			</div><!-- /content -->
 			
-			<div data-role="footer" data-id="footercarnes" data-iconpos="top" data-theme="a" data-position="inline">	
+			<div data-role="footer" data-id="mainfooter" data-iconpos="top" data-theme="a" data-position="inline">	
 				<div data-role="navbar">
 					<ul>				
 						<li><a href="#edit-md" data-icon="check">Editar</a></li>
 						<li><a href="#preview-md" data-icon="search">Vista previa</a></li>
 						<li><a href="#fullscreen-md" data-icon="star">Pantalla completa</a></li>
+					</ul>
+				</div><!-- /navbar -->
+			</div>
+		</div><!-- /page -->
+
+		<!-- page -->
+		<div data-role="page" id="optionpage" data-title="Opciones">
+			<div data-role="header">
+				<h1>Opciones</h1>
+				<a href="#mainpage" data-transition="slide" data-icon="back" data-iconpos="notext" class="ui-btn-left"></a>
+			</div><!-- /header -->
+			
+			<div data-role="content" id="content">	
+				<p>Mobile-EpicEditor Options</p>		
+			</div><!-- /content -->
+			
+			<div data-role="footer" data-id="optfooter" data-iconpos="top" data-theme="a" data-position="inline">	
+				<div data-role="navbar">
+					<ul>				
+						<li><a href="#save-opt" data-icon="plus">Guardar</a></li>
+						<li><a href="#cancel-opt" data-icon="delete">Cancelar</a></li>
+						<li><a href="#about-opt" data-icon="home">Acerca de</a></li>
 					</ul>
 				</div><!-- /navbar -->
 			</div>
