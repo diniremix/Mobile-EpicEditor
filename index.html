@@ -62,7 +62,38 @@
 			</div><!-- /header -->
 			
 			<div data-role="content" id="content">	
-				<p>Mobile-EpicEditor Options</p>		
+				<div data-role="fieldcontain" data-inset="true">
+					<fieldset data-role="controlgroup">
+						<legend><strong>Comunes:</strong></legend>
+						<label><input type="checkbox" name="checkbox-0" /> Permitir almacenar datos de forma local</label>
+					</fieldset>
+						
+					<fieldset data-role="controlgroup">
+						<legend><strong>Tema Base:</strong></legend>
+						<select name="baseTheme" data-native="true">
+							<option value="epiceditor.css" selected>Epiceditor</option>
+							<option value="epiceditor.css1">another</option>
+						</select>
+					</fieldset>
+
+					<fieldset data-role="controlgroup">
+						<legend><strong>Tema del Editor:</strong></legend>
+						<select name="editorTheme">
+							<option value="epic-dark.css" selected>Epic-dark</option>
+							<option value="epic-light.css">Epic-light</option>
+						</select>
+					</fieldset>
+
+					<fieldset data-role="controlgroup">
+						<legend><strong>Tema de la vista previa:</strong></legend>
+						<select name="previewTheme">
+							<option value="github.css" selected>GitHub</option>
+							<option value="preview-dark.css">Preview-dark</option>
+						</select>
+					</fieldset>
+						
+						
+				</div>
 			</div><!-- /content -->
 			
 			<div data-role="footer" data-id="optfooter" data-iconpos="top" data-theme="a" data-position="inline">	

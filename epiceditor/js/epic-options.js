@@ -1,5 +1,5 @@
 $(document).ready(function(){
-/*
+
 var opts = {
   container: 'epiceditor',
   basePath: 'epiceditor',
@@ -24,7 +24,7 @@ var opts = {
     edit: 79
   }
 }
-*/
+
 var editor = new EpicEditor().load();
 
 editmd.onclick = function () {
