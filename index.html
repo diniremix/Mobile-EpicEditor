@@ -5,7 +5,7 @@
 	<!-- information-->	
 	<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
 	<meta http-equiv="content-style-type" content="text/css"> 
-	<meta name="keywords" content="jquery mobile,jquery,mobile,epic editor,markdown">
+	<meta name="keywords" content="jquery mobile,jquery,mobile,epic,epic editor,markdown,md">
 	<meta name="description" content="jquery mobile app for Epic Editor"> 
 	<meta name="author" content="jorge brunal a.k.a. diniremix">
 	<meta name="date" content="07,18,2012"> 
@@ -46,8 +46,8 @@
 			<div data-role="footer" data-id="mainfooter" data-iconpos="top" data-theme="a" data-position="fixed">	
 				<div data-role="navbar">
 					<ul>				
-						<li><a href="#edit-md" id="editmd" name="editmd" data-icon="check">Editar</a></li>
-						<li><a href="#preview-md" id="previewmd" name="previewmd" data-icon="search">Vista previa</a></li>
+						<li><a href="#" id="editmd" name="editmd" data-icon="check">Editar</a></li>
+						<li><a href="#" id="previewmd" name="previewmd" data-icon="search">Vista previa</a></li>
 						<li><a href="#fullscreen-md" id="fullscreenmd" name="fullscreenmd" data-icon="star">Pantalla completa</a></li>
 					</ul>
 				</div><!-- /navbar -->
@@ -62,17 +62,17 @@
 			</div><!-- /header -->
 			
 			<div data-role="content" id="content">	
-				<div data-role="fieldcontain" data-inset="true">
+				<div data-role="fieldcontain">
 					<fieldset data-role="controlgroup">
 						<legend><strong>Comunes:</strong></legend>
-						<label><input type="checkbox" name="checkbox-0" /> Permitir almacenar datos de forma local</label>
+						<label><input type="checkbox" id="checkstore" name="checkstore"/> Permitir almacenar datos de forma local</label>
 					</fieldset>
 						
 					<fieldset data-role="controlgroup">
 						<legend><strong>Tema Base:</strong></legend>
 						<select name="baseTheme" data-native="true">
 							<option value="epiceditor.css" selected>Epiceditor</option>
-							<option value="epiceditor.css1">another</option>
+							<option value="otro.css">Otro</option>
 						</select>
 					</fieldset>
 
@@ -90,18 +90,16 @@
 							<option value="github.css" selected>GitHub</option>
 							<option value="preview-dark.css">Preview-dark</option>
 						</select>
-					</fieldset>
-						
-						
+					</fieldset>						
 				</div>
 			</div><!-- /content -->
 			
 			<div data-role="footer" data-id="optfooter" data-iconpos="top" data-theme="a" data-position="inline">	
 				<div data-role="navbar">
 					<ul>				
-						<li><a href="#save-opt" data-icon="plus">Guardar</a></li>
-						<li><a href="#cancel-opt" data-icon="delete">Cancelar</a></li>
-						<li><a href="#about-opt" data-icon="home">Acerca de</a></li>
+						<li><a href="#saveopt" id="saveopt" name="saveopt" data-icon="plus">Guardar</a></li>
+						<li><a href="#cancelopt" id="cancelopt" name="cancelopt" data-icon="delete">Cancelar</a></li>
+						<li><a href="#aboutopt" id="aboutopt" name="aboutopt" data-icon="home">Acerca de</a></li>
 					</ul>
 				</div><!-- /navbar -->
 			</div>
