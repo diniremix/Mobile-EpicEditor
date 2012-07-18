@@ -13,14 +13,16 @@
 	<meta http-equiv="expires" content= "thu, 31 dec 2012 00:05:00 est">
 	<meta name="generator" content="sublime text 2">	
 	<!-- jquery mobile cdn-->	
-	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.css" />
+	<!--<link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.css" />
 	<script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
-	<script src="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.js"></script>-->
 	<!-- jquery mobile local-->	
 	<meta name="viewport" content="width=device-width, initial-scale=1"> 		
 	<link rel="stylesheet" href="libs/JQueryMobile/1.1.0/jquery.mobile-1.1.0.min.css" />
 	<script type="text/javascript" src="libs/jQuery/jquery-1.7.1.min.js"></script>
 	<script type="text/javascript" src="libs/JQueryMobile/1.1.0/jquery.mobile-1.1.0.min.js"></script>
+	<!-- Epic Editor-->
+	<script type="text/javascript" src="epiceditor/js/epiceditor.min.js"></script>
 </head> 
 	<body>
 		<!--[if lt IE 9]>
@@ -35,10 +37,12 @@
 			</div><!-- /header -->
 
 			<div data-role="content" id="content">	
-				<p>Mobile-EpicEditor Here</p>		
+				<div data-role="fieldcontain">
+					<div id="epiceditor"></div>
+				</div>
 			</div><!-- /content -->
 			
-			<div data-role="footer" data-id="mainfooter" data-iconpos="top" data-theme="a" data-position="inline">	
+			<div data-role="footer" data-id="mainfooter" data-iconpos="top" data-theme="a" data-position="fixed">	
 				<div data-role="navbar">
 					<ul>				
 						<li><a href="#edit-md" data-icon="check">Editar</a></li>
@@ -71,5 +75,10 @@
 			</div>
 		</div><!-- /page -->
 	</body>
+	<script type="text/javascript">
+		console.log("cargando editor...");
+		var editor = new EpicEditor().load();
+		setTimeout("editor.load();",1000);
+	</script>
 </html>
 	
