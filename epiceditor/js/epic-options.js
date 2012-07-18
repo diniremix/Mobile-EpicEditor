@@ -25,24 +25,16 @@ var opts = {
   }
 }
 */
-  console.log("cargando opciones");
 var editor = new EpicEditor().load();
-//setTimeout("editor.load();",2000);
-//var editor = new EpicEditor(opts).load();
 
-$("#editmd").onclick = function () {
+editmd.onclick = function () {
   console.log("en modo de edicion");
   editor.edit();
 }
 
-$("#previewmd").onclick = function () {
-  editor.preview();
-  console.log("en modo de vista previa");
-}
-
 previewmd.onclick = function () {
   editor.preview();
-  console.log("en modo de vista previa por previewmd");
+  console.log("en modo de vista previa");
 }
 
 });
